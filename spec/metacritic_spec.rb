@@ -33,7 +33,6 @@ describe Metacritic do
     expect(movie.cast).to be_instance_of(Array)
     expect(movie.cast).to include("John Goodman")
     expect(movie.url).to eq("http://www.metacritic.com/movie/the-big-lebowski")
-
   end
 end
 

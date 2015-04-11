@@ -1,20 +1,21 @@
 require "metacritic/version"
 require "metacritic/movie"
-require "metacritic/api"
-require 'pry'
 require 'unirest'
+
 module Metacritic
   # Your code goes here...
   
   class << self
-      attr_accessor :response
+      attr_accessor :response, :api_key
 
-      API_KEY = "WL8NKy3p2pmsh7MO9dqF96rA6UlPp1iwdRQjsnSeNcXkr81YrR" 
+      def api_key
+        self.api_key = ENV['metacritic_api_key']
+      end
 
       def movie(title)
         @response = Unirest.post "https://byroredux-metacritic.p.mashape.com/find/movie",
         headers:{
-          "X-Mashape-Key" => API_KEY,
+          "X-Mashape-Key" => api_key,
           "Content-Type" => "application/x-www-form-urlencoded",
           "Accept" => "application/json"
         },
@@ -28,9 +29,5 @@ module Metacritic
       end
 
   end
-
-  class Error < StandardError; end
-  class PermissionError < Error; end
-  class InternalServerError < Error; end
 
 end
