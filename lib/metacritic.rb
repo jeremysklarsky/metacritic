@@ -1,7 +1,7 @@
 require "metacritic/version"
 require "metacritic/movie"
 require 'unirest'
-
+require 'figaro'
 module Metacritic
   # Your code goes here...
   
