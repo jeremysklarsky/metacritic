@@ -12,7 +12,6 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Wrapper for Mashape's Metacritic gem.}
   spec.homepage      = "https://github.com/jeremysklarsky/metacritic.git"
   spec.license       = "MIT"
-
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
