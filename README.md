@@ -1,6 +1,6 @@
 # Metacritic
 
-This is a ruby gem wrapper for Mashape's API critic. As of this version (0.1.0), the gem supports:
+This is a ruby gem wrapper for Mashape's Metacritic API. As of this version (0.1.0), the gem supports:
 
 1. Getting Metacritic details for a movie or a game
 2. Getting a list of critic reviews for a movie or game
