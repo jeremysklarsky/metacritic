@@ -47,7 +47,7 @@ Example usage:
 
 ```ruby
 @movie = Metacritic.movie("The Big Lebowski")
-@movie.name = "The Big Lebowski"`
+@movie.name = "The Big Lebowski"
 @movie.score = 69
 ```
 Special cases:
