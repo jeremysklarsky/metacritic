@@ -51,14 +51,8 @@ Example usage:
 @movie.score = 69
 ```
 Special cases:
-```ruby 
-@movie.cast
-``` 
-returns an array of the listed actors' names
-```ruby 
-@movie.genres
-``` 
-returns an array of the listed genres.
+`@movie.cast` returns an array of the listed actors' names
+`@movie.genres` returns an array of the listed genres.
 
 ###Searching for a game
 
