@@ -27,7 +27,7 @@ Or install it yourself as:
 
 Using this gem requires an API key. These can be obtained from [Mashape](https://www.mashape.com/byroredux/metacritic). Currently, the free key allows for 1,000 requests per day.
 
-As this gem requires use of a private API key, it is strongly suggested you use Figaro to manage your keys. `metacritic` is configured to access Install `figaro` (see [Figaro](https://github.com/laserlemon/figaro) for instructions) in your application, and place the following in your `application.yml` file:
+As this gem requires use of a private API key, it is strongly suggested you use Figaro to manage your keys. `metacritic` is configured to access `metacritic_api_key` which needs to be set in your environmental variables. A good option is to use `figaro` (see [Figaro](https://github.com/laserlemon/figaro) for instructions) in your application, and place the following in your `application.yml` file:
 
 ```ruby
 metacritic_api_key: <your key here>
