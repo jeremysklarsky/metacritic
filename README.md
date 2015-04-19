@@ -50,8 +50,8 @@ Example usage:
 @movie.name = "The Big Lebowski"
 @movie.score = 69
 ```
-Special cases:
-`@movie.cast` returns an array of the listed actors' names
+Special cases:<br>
+`@movie.cast` returns an array of the listed actors' names.<br>
 `@movie.genres` returns an array of the listed genres.
 
 ###Searching for a game
