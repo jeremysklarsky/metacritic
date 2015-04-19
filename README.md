@@ -53,10 +53,12 @@ Example usage:
 Special cases:
 ```ruby 
 @movie.cast
-``` returns an array of the listed actors' names
+``` 
+returns an array of the listed actors' names
 ```ruby 
 @movie.genres
-``` returns an array of the listed genres.
+``` 
+returns an array of the listed genres.
 
 ###Searching for a game
 
