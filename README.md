@@ -29,42 +29,48 @@ Using this gem requires an API key. These can be obtained from [Mashape](https:/
 
 As this gem requires use of a private API key, it is strongly suggested you use Figaro to manage your keys. `metacritic` is configured to access Install `figaro` (see [Figaro](https://github.com/laserlemon/figaro) for instructions) in your application, and place the following in your `application.yml` file:
 
-`metacritic_api_key: <your key here>`
+```ruby
+metacritic_api_key: <your key here>
+```
 
 ##Using the gem
 
 ###Searching for a movie
 
-`Metacritic.movie(title)` will return a movie object that has the following attributes:
+```ruby 
+Metacritic.movie(title)``` will return a movie object that has the following attributes:
   `name`, `score`, `rlsdate`, `genres`, `rating`, `thumbnail`, `user_score`, `summary`, `director`, `cast`
 
 Example usage:
 
-`@movie = Metacritic.movie("The Big Lebowski")`
-`@movie.name = "The Big Lebowski"`
-`@movie.score = 69`
-
+```ruby
+@movie = Metacritic.movie("The Big Lebowski")
+@movie.name = "The Big Lebowski"`
+@movie.score = 69`
+```
 Special cases:
-`@movie.cast` returns an array of the listed actors' names
-`@movie.genres` returns an array of the listed genres.
+```ruby @movie.cast``` returns an array of the listed actors' names
+```ruby @movie.genres``` returns an array of the listed genres.
 
 ###Searching for a game
 
-`Metacritic.game(title)` will return a game object that has the following attributes:
+```ruby Metacritic.game(title)``` will return a game object that has the following attributes:
 `name`,`score`,`rlsdate`,`genre`,`rating`,`platform`,`publisher`,`developer`,`url`
 
 Example usage:
 
-`@game = Metacritic.game("The Elder Scrolls V: Skyrim")`
-`@game.name = "The Elder Scrolls V: Skyrim"`
-`@game.score = 92`
+```ruby
+@game = Metacritic.game("The Elder Scrolls V: Skyrim")
+@game.name = "The Elder Scrolls V: Skyrim"
+@game.score = 92```
 
 ###Getting a list of a movie or game's reviews
 
-`Metacritic.reviews(metacritic_url)` will return an array of reviews. 
+```ruby Metacritic.reviews(metacritic_url)``` will return an array of reviews. 
 
 Example usage: 
-`Metacritic.reviews("http://www.metacritic.com/game/pc/portal-2")` will return:
+```ruby 
+Metacritic.reviews("http://www.metacritic.com/game/pc/portal-2")``` will return:
     `[
     {
       "critic": "DarkStation",
