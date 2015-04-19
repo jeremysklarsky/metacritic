@@ -1,7 +1,7 @@
 module Metacritic
     
   class Game
-
+ 
     attr_accessor :response
 
     def initialize(response)
