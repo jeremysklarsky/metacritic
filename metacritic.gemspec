@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Metacritic::VERSION
   spec.authors       = ["Jeremy Sklarsky"]
   spec.email         = ["jeremy.sklarsky@gmail.com"]
-  spec.summary       = %q{Wrapper for Mashape's Metacritic gem.}
-  spec.description   = %q{Wrapper for Mashape's Metacritic gem.}
+  spec.summary       = %q{Wrapper for Mashape's Metacritic API.}
+  spec.description   = %q{Wrapper for Mashape's Metacritic API.}
   spec.homepage      = "https://github.com/jeremysklarsky/metacritic.git"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
